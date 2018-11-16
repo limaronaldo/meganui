@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prepare your environment
+
+To import Sass files, you first need to install node-sass.
+Run `npm install node-sass` or `yarn add node-sass` inside your workspace...
+
 ## Available Scripts
 
 In the project directory, you can run:
