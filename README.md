@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prepare your environment
+
+### Install Git Flow
+
+See instructions here:
+https://github.com/goVulpi/taylorops/tree/master/gitflow_standards
+
+### Install Node Dependencies
+
+To configure this project in a new environment, you first need to run `npm install`.
+If you're on a macOS or Linux, you can also run `scripts/install.sh` to install Node dependencies.
+
+### Install SASS
+
+To import Sass files, you first need to install node-sass.
+Run `npm install node-sass` or `yarn add node-sass` inside your workspace...
+
 ## Available Scripts
 
 In the project directory, you can run:
