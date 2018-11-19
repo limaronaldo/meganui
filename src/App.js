@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Button></Button>
+        <Button>First Button</Button>
       </div>
     );
   }
