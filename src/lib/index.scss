@@ -40,4 +40,6 @@ $red:    #ff6563;
   --green: $green; 
   --yellow: $yellow;
   --red: $red;
+
+  font-size: calc(var(--layout-base)*2);
 }
