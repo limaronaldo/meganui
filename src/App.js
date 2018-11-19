@@ -5,7 +5,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Button>oi</Button>
         <Heading level="1">Título 1</Heading>
         <Heading level="2">Título 2</Heading>
         <Heading level="3">Título 3</Heading>
