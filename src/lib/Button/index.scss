@@ -1,19 +1,72 @@
 @import '../index.scss';
 
-button {
-    background-color: $pink;
-    border: 0 none $white;
-    border-radius: calc(var(--layout-base)*2);
+@mixin fill($color) {
+    background: $color;
+    border: calc(var(--layout-base)*.25) solid transparent;
     color: $white;
+    &:focus {
+        box-shadow: 0 0 0 calc(var(--layout-base)*.5) transparentize($color, .6);
+        outline: 0 none;
+    }
+    &:hover {
+        background: darken($color, 10%);
+    }
+    &:disabled {
+        cursor: default;
+        opacity: .5;
+        filter: saturate(.8);
+        &:hover {
+            background: $color;
+        }
+    }
+    &.outlined {
+        color: $color;
+        background: none;
+        background-color: transparent;
+        border: calc(var(--layout-base)*.25) solid;
+        &:hover {
+            color: darken($color, 10%);
+            background: transparentize($white, .8);
+        }
+    }
+
+}
+.button {
+    @include fill($gray4);    
+    border-radius: calc(var(--layout-base)*2);
     cursor: pointer;
-    font-family: inherit;
-    font-size: calc(var(--layout-base)*1.5);
-    line-height: 1.333333333;
-    overflow: hidden;
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
     padding: calc(var(--layout-base)) calc(var(--layout-base)*2);
     position: relative;
     transition: .2s;
-    &:hover {
-        background: lighten($pink, 5%);
-    }
+
+    margin: 6px;
+}
+.primary {
+    @include fill($pink);
+}
+.secondary {
+    @include fill($blue);
+}
+
+.medium {
+    border-radius: calc(var(--layout-base)*4);
+    padding: calc(var(--layout-base)*1.375) calc(var(--layout-base)*2.75);
+    font-size: 0.875rem;
+}
+
+
+.big {
+    border-radius: calc(var(--layout-base)*4);
+    padding: calc(var(--layout-base)*1.75) calc(var(--layout-base)*3.5);
+    font-size: 1rem;
+}
+
+.bigger {
+    border-radius: calc(var(--layout-base)*4);
+    padding: calc(var(--layout-base)*2) calc(var(--layout-base)*4);
+    font-size: 1.25rem;
 }
