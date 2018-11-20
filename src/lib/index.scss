@@ -22,4 +22,15 @@ $red:    #ff6563;
 
 :root {
   --layout-base: 8px;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  
+  font-size: calc(var(--layout-base)*2);
+}
+
+body {
+  background: $gray9;
+  color: $gray4;
+  font-family: 'Open Sans', sans-serif;
 }
