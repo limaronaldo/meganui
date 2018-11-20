@@ -21,14 +21,16 @@ $yellow: #ff9a08;
 $red:    #ff6563;
 
 :root {
-  font-size: calc(var(--layout-base)*2);
-  
   --layout-base: 8px;
-  
-  -webkit-font-smoothing: antialiased;
+
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  
+  font-size: calc(var(--layout-base)*2);
 }
 
 body {
+  background: $gray9;
+  color: $gray4;
   font-family: 'Open Sans', sans-serif;
 }
