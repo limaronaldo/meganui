@@ -6,7 +6,7 @@ export class Button extends Component {
     render() {
         return (
             <button>
-                First Button
+                {this.props.children}
             </button>
         );
     }
