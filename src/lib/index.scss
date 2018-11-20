@@ -19,27 +19,14 @@ $yellow: #ff9a08;
 $red:    #ff6563;
 
 :root {
-  --layout-base: 8px;
-
-  --purple: $purple;
-  --pink: $pink;
-  --blue: $blue;
-
-  --white: $white;
-  --gray1: $gray1;
-  --gray2: $gray2;
-  --gray3: $gray3;
-  --gray4: $gray4;
-  --gray5: $gray5;
-  --gray6: $gray6;
-  --gray7: $gray7;
-  --gray8: $gray8;
-  --gray9: $gray9;
-  --black: $black;
-
-  --green: $green; 
-  --yellow: $yellow;
-  --red: $red;
-
   font-size: calc(var(--layout-base)*2);
+  
+  --layout-base: 8px;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
