@@ -9,12 +9,11 @@
         outline: 0 none;
     }
     &:hover {
-        background: darken($color, 10%);
+        background: darken($color, 5%);
     }
     &:disabled {
         cursor: default;
         opacity: .5;
-        filter: saturate(.8);
         &:hover {
             background: $color;
         }
@@ -25,16 +24,17 @@
         background-color: transparent;
         border: calc(var(--layout-base)*.25) solid;
         &:hover {
-            color: darken($color, 10%);
-            background: transparentize($white, .8);
+            color: $white;
+            background: $color;
+            border-color: $color;
         }
     }
-
 }
 .button {
     @include fill($gray4);    
-    border-radius: calc(var(--layout-base)*2);
+    border-radius: calc(var(--layout-base)*4);
     cursor: pointer;
+    display: inline-block;
     font-family: var(--primary-font);
     font-size: 0.75rem;
     font-weight: bold;
@@ -48,25 +48,30 @@
 .primary {
     @include fill($pink);
 }
-.secondary {
+.primary-variant {
+    @include fill($purple);
+}
+.secondary, .info {
     @include fill($blue);
 }
-
-.medium {
-    border-radius: calc(var(--layout-base)*4);
+.alert {
+    @include fill($red)
+}
+.success {
+    @include fill($green)
+}
+.warn {
+    @include fill($yellow)
+}
+.big {
     padding: calc(var(--layout-base)*1.375) calc(var(--layout-base)*2.75);
     font-size: 0.875rem;
 }
-
-
-.big {
-    border-radius: calc(var(--layout-base)*4);
+.bigger {
     padding: calc(var(--layout-base)*1.75) calc(var(--layout-base)*3.5);
     font-size: 1rem;
 }
-
-.bigger {
-    border-radius: calc(var(--layout-base)*4);
+.biggest {
     padding: calc(var(--layout-base)*2) calc(var(--layout-base)*4);
     font-size: 1.25rem;
 }
