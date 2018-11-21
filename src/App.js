@@ -11,10 +11,9 @@ class App extends Component {
         <Heading level="4">h4. Megan heading</Heading>
         <Heading level="5">h5. Megan heading</Heading>
         <Heading level="6">h6. Megan heading</Heading>
-        <Button className="alert">
+        <Button>
           First Button
         </Button>
-        <Heading level="1"></Heading>
       </div>
     );
   }
