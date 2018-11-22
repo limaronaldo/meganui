@@ -1,0 +1,21 @@
+@import '../index.scss';
+
+input[type=text] {
+    background: $white;
+    border: 2px solid transparentize($black, .9);
+    border-radius: calc(var(--layout-base)*4);
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    
+    padding: .5rem 1rem;
+    transition: .2s;
+    width: 100%;
+    &:hover {
+        border-color: transparentize($black, .8);
+    }
+    &:focus {
+        border-color: $blue;
+        outline: 0 none;
+    }
+}
