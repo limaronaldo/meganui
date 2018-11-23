@@ -37,4 +37,4 @@ lib-cov
 
 pids
 results
-/.cache
+.cache/
