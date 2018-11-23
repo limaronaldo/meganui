@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Heading } from './lib';
+import { Button, Heading } from './lib';
 
 class App extends Component {
   render() {
