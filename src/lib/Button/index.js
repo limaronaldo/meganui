@@ -6,6 +6,11 @@ export class Button extends Component {
     render() {
         return (
             <div>
+                <button className="button block">{this.props.children}</button>
+                <button className="button block big primary">{this.props.children}</button>
+                <button className="button block bigger primary-variant">{this.props.children}</button>
+                <button className="button block biggest secondary">{this.props.children}</button>
+                <br></br>
                 <button className="button">{this.props.children}</button>
                 <button className="button primary">{this.props.children}</button>
                 <button className="button primary-variant">{this.props.children}</button>

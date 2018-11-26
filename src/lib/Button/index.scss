@@ -42,7 +42,11 @@
     padding: .5rem 1rem;
     position: relative;
     transition: .2s;
-    
+    margin: 6px;
+    &.block {
+        display: block;
+        width: 100%;
+    }
     &.primary {
         @include fill($pink);
     }
