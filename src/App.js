@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Heading } from './lib';
+import { Button, Heading, TextInput } from './lib';
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
         <Button>
           First Button
         </Button>
+        <TextInput/>
       </div>
     );
   }
