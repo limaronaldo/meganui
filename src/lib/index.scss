@@ -23,6 +23,7 @@ $red:    #ff6563;
 :root {
   --border-width: 2px;
   --layout-base: 8px;
+  --transition-base: .2s;
 
   --primary-font: 'Ubuntu', sans-serif;
   --general-font: 'Open Sans', sans-serif;
@@ -43,10 +44,4 @@ body {
   background: $gray9;
   color: $gray4;
   font-family: var(--general-font);
-}
-
-body {
-  background: $gray9;
-  color: $gray4;
-  font-family: 'Open Sans', sans-serif;
 }
