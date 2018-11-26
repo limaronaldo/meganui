@@ -49,9 +49,9 @@
         font-size: 1.25rem;
     }
     &.success {
-        @include special-colors($green);
+        @include text-input-state($green);
     }
     &.error {
-        @include special-colors($red);
+        @include text-input-state($red);
     }
 }
