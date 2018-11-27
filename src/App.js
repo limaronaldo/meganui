@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Heading, TextInput } from './lib';
+import { Button, Heading, Text, TextInput } from './lib';
 
 class App extends Component {
   render() {
     return (
-    <div>
+      <div>
         <Heading level="1">h1. Megan heading</Heading>
         <Heading level="2">h2. Megan heading</Heading>
         <Heading level="3">h3. Megan heading</Heading>
@@ -14,7 +14,8 @@ class App extends Component {
         <Button>
           First Button
         </Button>
-        <TextInput/>
+        <TextInput/>        
+        <Text/>
       </div>
     );
   }

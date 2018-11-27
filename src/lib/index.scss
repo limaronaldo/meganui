@@ -34,14 +34,20 @@ $red:    #f03030;
   font-size: calc(var(--layout-base)*2);
 }
 
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+     -moz-box-sizing: $property;
+          box-sizing: $property;
+}
+
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 body {
   background: $gray9;
   color: $gray4;
   font-family: var(--general-font);
+  font-size: .875rem;
+  line-height: 1.5;
 }
