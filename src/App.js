@@ -6,7 +6,6 @@ class App extends Component {
     return (
       <div>
         <Heading level="1">h1. Megan heading</Heading>
-        <Heading level="1">h1. Megan heading</Heading>
         <Heading level="2">h2. Megan heading</Heading>
         <Heading level="3">h3. Megan heading</Heading>
         <Heading level="4">h4. Megan heading</Heading>
