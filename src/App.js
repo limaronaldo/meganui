@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Heading, Text, TextInput } from './lib';
+import { Button, Heading, Image, Text, TextInput } from './lib';
 
 class App extends Component {
   render() {
@@ -14,7 +14,8 @@ class App extends Component {
         <Button>
           First Button
         </Button>
-        <TextInput/>        
+        <TextInput/>
+        <Image></Image>        
         <Text/>
       </div>
     );

@@ -1,0 +1,24 @@
+@import '../index.scss';
+:root {
+    --thumbnail-height-base: 32px;
+}
+@mixin thumbnail-dimensions($size) {
+    height: calc(var(--thumbnail-height-base)*$size);
+    width: calc(var(--thumbnail-height-base)*$size);    
+}
+.image {
+    border-radius: 50%;
+    display: block;
+    &.thumbnail  {
+        height: var(--thumbnail-height-base);
+        &.big {
+            @include(1.5);
+        }
+        &.bigger {
+            height: calc(var(--thumbnail-height-base)*2.25);
+        }
+        &.biggest {
+            height: calc(var(--thumbnail-height-base)*4.5);
+        }
+    }
+}
