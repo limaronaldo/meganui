@@ -42,7 +42,6 @@
     padding: .5rem 1rem;
     position: relative;
     transition: .2s;
-    margin: 6px;
     &.block {
         display: block;
         width: 100%;
@@ -56,13 +55,13 @@
     &.secondary, &.info {
         @include fill($blue);
     }
-    &.alert {
+    &.danger {
         @include fill($red)
     }
     &.success {
         @include fill($green)
     }
-    &.warn {
+    &.warning {
         @include fill($yellow)
     }
     &.big {
