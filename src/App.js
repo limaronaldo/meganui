@@ -15,7 +15,10 @@ class App extends Component {
           First Button
         </Button>
         <TextInput/>
-        <Image></Image>        
+        <Image thumbnail alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
+        <Image thumbnail size="big" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
+        <Image thumbnail size="bigger" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
+        <Image thumbnail size="biggest" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
         <Text/>
       </div>
     );

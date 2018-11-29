@@ -3,14 +3,19 @@ import './index.scss';
 
 export class Image extends Component {
 
+    getClassNames() {
+        let classNames = ["image"];
+
+        this.props.fluid ? classNames.push("fluid") : Function.prototype();
+        this.props.thumbnail ? classNames.push("thumbnail") : Function.prototype();
+        (typeof this.props.size === 'string') ? classNames.push(this.props.size) : Function.prototype();
+
+        return classNames.join(" ");
+    }
+
     render() {
         return (
-            <div>
-                <img className="image thumbnail" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"></img>
-                <img className="image thumbnail big" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"></img>
-                <img className="image thumbnail bigger" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"></img>
-                <img className="image thumbnail biggest" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"></img>
-            </div>
+            <img className={this.getClassNames()} src={this.props.src} alt={this.props.alt}/>
         );
     }
 

@@ -3,22 +3,26 @@
     --thumbnail-height-base: 32px;
 }
 @mixin thumbnail-dimensions($size) {
-    height: calc(var(--thumbnail-height-base)*$size);
-    width: calc(var(--thumbnail-height-base)*$size);    
+    height: calc(var(--thumbnail-height-base)*#{$size});
+    width: calc(var(--thumbnail-height-base)*#{$size});    
 }
 .image {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
+    &.fluid {
+        max-width: 100%;
+        height: auto;
+    }
     &.thumbnail  {
         height: var(--thumbnail-height-base);
         &.big {
-            @include(1.5);
+            @include thumbnail-dimensions(1.5);
         }
         &.bigger {
-            height: calc(var(--thumbnail-height-base)*2.25);
+            @include thumbnail-dimensions(2.25);
         }
         &.biggest {
-            height: calc(var(--thumbnail-height-base)*4.5);
+            @include thumbnail-dimensions(4.5);
         }
     }
 }
