@@ -5,7 +5,6 @@ export class Button extends Component {
 
     getClassNames() {
         let classNames = ["button"];
-        let propsAsClasses = ["block", "outlined"];
 
         this.props.block ? classNames.push("block") : Function.prototype();
         this.props.outlined ? classNames.push("outlined") : Function.prototype();

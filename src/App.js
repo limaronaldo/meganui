@@ -1,5 +1,17 @@
-import React, { Component } from 'react';
+import React, { ReactDOM, Component } from 'react';
 import { Button, Heading, Image, Text, TextInput } from './lib';
+
+if ("development" === process.env.NODE_ENV) {
+  const a11y = require("react-a11y").default;
+  a11y(React, ReactDOM, {
+    rules: {
+      "img-uses-alt": "warn",
+      "redundant-alt": [
+        "warn", ["Image"]
+      ]
+    }
+  });
+}
 
 class App extends Component {
   render() {
