@@ -1,7 +1,9 @@
-import React, { ReactDOM, Component } from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Button, Heading, Image, Text, TextInput } from './lib';
 
 if ("development" === process.env.NODE_ENV) {
+
   const a11y = require("react-a11y").default;
   a11y(React, ReactDOM, {
     rules: {
