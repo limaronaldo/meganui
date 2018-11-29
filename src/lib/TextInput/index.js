@@ -3,16 +3,18 @@ import './index.scss';
 
 export class TextInput extends Component {
 
+    getClassNames() {
+        let classNames = ["text-input"];
+
+        (typeof this.props.color === 'string') ? classNames.push(this.props.color) : Function.prototype();
+        (typeof this.props.size === 'string') ? classNames.push(this.props.size) : Function.prototype();
+        
+        return classNames.join(" ");
+    }
+
     render() {
         return (
-            <div>
-                <input placeholder="Placeholder..." className="text-input error" type="text"></input>
-                <input placeholder="Placeholder..." className="text-input success" type="text"></input>
-                <input placeholder="Placeholder..." className="text-input" type="text"></input>
-                <input placeholder="Placeholder..." className="text-input big" type="text"></input>
-                <input placeholder="Placeholder..." className="text-input bigger" type="text"></input>
-                <input placeholder="Placeholder..." className="text-input biggest" type="text"></input>
-            </div>
+            <input placeholder={this.props.placeholder} className={this.getClassNames()} type="text"></input>
         );
     }
 

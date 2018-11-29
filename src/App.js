@@ -11,7 +11,7 @@ class App extends Component {
         <Heading level="4">h4. Megan heading</Heading>
         <Heading level="5">h5. Megan heading</Heading>
         <Heading level="6">h6. Megan heading</Heading>
-        <TextInput/>
+        <TextInput size="big" placeholder="Placeholder..."/>
         <Image thumbnail alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
         <Image thumbnail size="big" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
         <Image thumbnail size="bigger" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
