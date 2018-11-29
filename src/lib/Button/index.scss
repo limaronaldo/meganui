@@ -56,13 +56,16 @@
         @include fill($blue);
     }
     &.danger {
-        @include fill($red)
+        @include fill($red);
+    }
+    &.dark {
+        @include fill($gray1);
     }
     &.success {
         @include fill($green)
     }
     &.warning {
-        @include fill($yellow)
+        @include fill($yellow);
     }
     &.big {
         padding: .6875rem 1.375rem;
