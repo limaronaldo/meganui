@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Heading, Image, Text, TextInput } from './lib';
+import { Button, Heading, Hiperlink, Image, Text, TextInput } from './lib';
 
 class App extends Component {
   render() {
@@ -16,6 +16,7 @@ class App extends Component {
         <Image thumbnail size="big" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
         <Image thumbnail size="bigger" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
         <Image thumbnail size="biggest" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
+        <Hiperlink href="#">Hello world</Hiperlink>
         <Text/>
         <Button size="big" color="dark">First Button</Button>
       </div>
