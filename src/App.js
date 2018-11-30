@@ -8,7 +8,7 @@ if ("development" === process.env.NODE_ENV) {
   a11y(React, ReactDOM, {
     rules: {
       "img-uses-alt": "warn",
-      "redundant-alt": [
+      "img-redundant-alt": [
         "warn", ["Image"]
       ]
     }
@@ -37,10 +37,10 @@ class App extends Component {
         <TextInput size="lead"/>
         <TextInput size="small"/>
         <TextInput/>
-        <Image thumbnail alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
-        <Image thumbnail size="big" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
-        <Image thumbnail size="bigger" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
-        <Image thumbnail size="biggest" alt="" src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>        
+        <Image thumbnail alt=" " src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>
+        <Image thumbnail size="big" alt=" " src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>
+        <Image thumbnail size="bigger" alt=" " src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>
+        <Image thumbnail size="biggest" alt=" " src="https://s3.amazonaws.com/signature-vulpi/pictures/Panda.png"/>
         <Text/>
         <Button size="big" color="dark">First Button</Button>
       </div>
